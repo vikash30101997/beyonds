@@ -1,0 +1,2 @@
+docker run --privileged -e "192.168.99.100=$(docker-machine ip default)" -e "PORT=8080" --name ide50 -d -p 5050:5050 -p 8080-8082:8080-8082 cs50/ide
+docker start ide50
